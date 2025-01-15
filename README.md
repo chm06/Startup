@@ -16,13 +16,11 @@ For this deliverable I did the following. I checked the box `[x]` and added a de
 
 ### Elevator pitch
 
-People love their pets. But when it comes to deciding who's pet is the cutest, we can't agree. Pet Ranker will be a multiplayer web application that allows peers to view and vote on many different pets, with a scoreboard to show which one is the most loved.
+People love their pets. But when it comes to deciding who's pet is the cutest, we can't agree. Pet Ranker will be a multiplayer web application that allows users to view and vote on many different pets, with a scoreboard to show which one is the most loved. Choose your favorites and vote for them each day!
 
 ### Design
 
 ![Website Sketch](PetRanker_Sketch_Final.png)
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 ```mermaid
 sequenceDiagram
@@ -42,7 +40,6 @@ sequenceDiagram
 - Add your personal favorites to your list
 - View weekly scoreboard of all the pets
 - Receive notifications if one of your favorites is doing well
-- View app description
 
 ### Technologies
 
@@ -52,8 +49,8 @@ I am going to use the required technologies in the following ways.
 - **CSS** - A pleasing and "friendly" color scheme with matching font, effects for when you hover over and click buttons like "love" and "favorite"
 - **React** - Updates the UI dynamically, like switching between logged-in and logged-out views or updating parts when votes are cast
 - **Service** - Use a pet-related API (like Petfinder?) to *fetch* pet images/profiles
-- **DB/Login** - Sa
-- **WebSocket** - Description here
+- **DB/Login** - Saves user data (email, password, and favorites), restricts voting to signed-in users
+- **WebSocket** - Sends and receives updates to the scoreboard in real time
 
 ## 🚀 AWS deliverable
 
