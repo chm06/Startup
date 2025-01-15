@@ -1,4 +1,4 @@
-# Pet Ranker!
+# Pet Ranker
 
 [My Notes](notes.md)
 
@@ -12,7 +12,7 @@ For this deliverable I did the following. I checked the box `[x]` and added a de
 - [x] A concise and compelling elevator pitch
 - [x] Description of key features
 - [ ] Description of how you will use each technology
-- [ ] One or more rough sketches of your application. Images must be embedded in this file using Markdown image references.
+- [x] One or more rough sketches of your application. Images must be embedded in this file using Markdown image references.
 
 ### Elevator pitch
 
@@ -26,9 +26,13 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 ```mermaid
 sequenceDiagram
-    actor You
-    actor Website
-    You->>Website: Replace this with your design
+    actor User
+    User->>Login: Enter login information
+    Login->>Play: View pets
+    Play->>Play: Repeat voting sequence
+    Play->>Play: View other pet categories
+    Play-->>Login: Logout
+    Login->>Leaderboard: view pet scores
 ```
 
 ### Key features
@@ -47,8 +51,8 @@ I am going to use the required technologies in the following ways.
 - **HTML** - I'll have three pages for register/login, play (with options to filter by pet type), and leaderboard
 - **CSS** - A pleasing and "friendly" color scheme with matching font, effects for when you hover over and click buttons like "love" and "favorite"
 - **React** - Updates the UI dynamically, like switching between logged-in and logged-out views or updating parts when votes are cast
-- **Service** - Description here
-- **DB/Login** - Description here
+- **Service** - Use a pet-related API (like Petfinder?) to *fetch* pet images/profiles
+- **DB/Login** - Sa
 - **WebSocket** - Description here
 
 ## 🚀 AWS deliverable
